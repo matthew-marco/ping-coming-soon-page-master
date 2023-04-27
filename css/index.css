@@ -1,0 +1,171 @@
+/* start global rules */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+
+
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+
+
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end global rules */
+
+
+/* start header */
+header .container {
+  text-align: center;
+  margin-top: 1.875rem;
+}
+
+header .container h1 {
+  color: var(--Gray);
+  font-weight: 300;
+  font-size: 2.8125rem;
+}
+
+header .container h1 span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+}
+
+header .container p {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0.625rem;
+}
+
+header .container form {
+
+  margin-bottom: 50px;
+}
+header .container form p {
+  color: red;
+  font-size: 16px;
+  display: none;
+}
+header .container form #email {
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--Gray);
+  width: 60%;
+  position: relative;
+
+}
+
+header .container form #submit {
+  padding: 15px 50px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: var(--Blue);
+
+
+}
+header .container form #email.false{
+  border-color: red;
+
+}
+header .container form.false p{
+  display: block;
+}
+
+
+/* end header */
+
+/* start content */
+
+main .container {
+  text-align: center;
+}
+
+main .container img {
+  max-width: 90%;
+}
+
+main .container .icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+main .container .icons i {
+  color: var(--Blue);
+  background-color: white;
+
+}
+
+main .container p {
+  color: var(--Pale-Blue);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* end content */
+
+
+
+    
+@media (min-width:350px) and (max-width:550px){
+    
+  .container{
+      width: 370px;
+  }
+  header .container h1{
+    font-size: 31px;
+  }
+
+  header .container form #email{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  header .container form  #submit{
+    width: 100%;
+  }
+
+  main .container img{
+    margin-bottom: 100px;
+  }
+}
